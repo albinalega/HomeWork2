@@ -16,17 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vo4-Ow-tsF">
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vo4-Ow-tsF">
                                 <rect key="frame" x="143" y="157" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhu-rd-Fb1">
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhu-rd-Fb1">
                                 <rect key="frame" x="143" y="344" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlG-Hs-q5W">
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlG-Hs-q5W">
                                 <rect key="frame" x="143" y="535" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
@@ -37,6 +37,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="NEXT">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonWasTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Dv-pb-61a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +49,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iLr-Xn-g9v" secondAttribute="bottom" constant="72" id="gf6-TQ-YOd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="hlG-Hs-q5W" id="nAA-hE-dnA"/>
+                        <outlet property="nextButton" destination="iLr-Xn-g9v" id="1Ml-mq-IwZ"/>
+                        <outlet property="redLightView" destination="Vo4-Ow-tsF" id="meb-pP-Kmf"/>
+                        <outlet property="yellowLightView" destination="Dhu-rd-Fb1" id="EOk-7j-5Lk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
