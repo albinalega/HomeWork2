@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLightView.layer.cornerRadius = 63
-        yellowLightView.layer.cornerRadius = 63
-        greenLightView.layer.cornerRadius = 63
+        redLightView.layer.cornerRadius = redLightView.frame.size.width/2 // or = 63 ?
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.size.width/2
+        greenLightView.layer.cornerRadius = greenLightView.frame.size.width/2
     }
     
     @IBAction func nextButtonWasTapped() {
